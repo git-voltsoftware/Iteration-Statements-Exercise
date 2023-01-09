@@ -60,7 +60,7 @@ namespace IterationStatements
         static void votingAge()
         {
             Console.WriteLine("What is your current age?");
-            int age = Convert.ToInt32(Console.ReadLine());
+            int age = Convert.ToInt32(Console.ReadLine()); //I cannot figure out how to apply Parse() or TryParse();
             string voterEligibility = (age >= 18) ? "You can vote." : "You cannot vote.";
             Console.WriteLine(voterEligibility);
         }
@@ -77,7 +77,7 @@ namespace IterationStatements
         }
 
         //Write a method to display the multiplication table(from 1 to 12) of a given integer
-        static void multiplicationOneToTwelve(int a)
+        static void multiplicationTableOneToTwelve(int a)
         {
             for (int i = 1; i <= 12; i++)
             {
@@ -96,6 +96,21 @@ namespace IterationStatements
 
             //integer equality
             integerEquality(5, 6);
+
+            //even number
+            evenNumberCheck(6);
+
+            //positive negative
+            postiveOrNegativeNumber(-20);
+
+            //voting age
+            votingAge();
+
+            //negative ten to positive ten
+            negativeTenToTen();
+
+            //mulitplication table
+            multiplicationTableOneToTwelve(1);
         }
     }
 }
